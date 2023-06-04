@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set_images_js</title>
+</head>
+<body style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpG_fViXYlraKfWsRCFfYGeUfRbD1PzdrqqwYRvWlX8-wBDO55EMIWRXFl-U8hh8T26D4&usqp=CAU);background-repeat: no-repeat;background-size: cover;">
+    <h1 style="margin-left: 350px;">
+        DISPLAY IMAGES(using diffrents events)
+    </h1>
+
+     <!-- <img style="border-radius: 10px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOe-WQ_fyuBd9Q8IS466Z3OB3cI7Dzv6SOCScp6REJxbm_Hg7pmUnTwSD7HSnBsfbm3S4&usqp=CAU"onFocus="src='https://st.hzcdn.com/simgs/pictures/pools/unique-nature-integrated-spa-vollmer-custom-pools-llc-img~3c1141bb05ca4bb3_9-0274-1-d78b47d.jpg'"         height="280px"alt="nature imag"title="nature images">
+
+    <img style="border-radius: 10px;" src="https://thumbs.dreamstime.com/b/piece-beautiful-nature-landscape-print-ready-px-dpi-cm-269165990.jpg"height="280px"alt="nature imag"title="nature images">
+
+    <img style="border-radius: 10px;" src="https://wallpapercave.com/wp/wp5193189.jpg"height="280"alt="nature imag"title="nature images"> -->
+
+
+
+    <img  style="border-radius: 10px;" src="https://wallpapercave.com/wp/wp5193189.jpg" onMouseover="src='https://thumbs.dreamstime.com/b/piece-beautiful-nature-landscape-print-ready-px-dpi-cm-269165990.jpg'">
+
+
+
+    <p id="text" style="font-size: 16px;color: white;">This is a paragraph.Aiamn khan i am 17 yeaqrs old. Click the buttons below to zoom in or zoom out Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor reprehenderit omnis maiores aspernatur libero debitis voluptas soluta amet cupiditate accusantium quam nobis blanditiis quisquam totam, labore eligendi accusamus deserunt expedita!.</p>
+
+    <button onclick="zoomIn()">Zoom In (+)</button>
+    <button onclick="zoomOut()">Zoom Out (-)</button>
+    
+    <script>
+      function zoomIn() {
+        var text = document.getElementById("text");
+        var currentSize = parseInt(window.getComputedStyle(text).fontSize);
+        text.style.fontSize = (currentSize + 10) + "px";
+      }
+    
+      function zoomOut() {
+        var text = document.getElementById("text");
+        var currentSize = parseInt(window.getComputedStyle(text).fontSize);
+        text.style.fontSize = (currentSize - 10) + "px";
+      }
+    </script>
+    
+</body>
+</html>
